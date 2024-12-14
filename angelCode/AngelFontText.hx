@@ -2,7 +2,6 @@ package angelCode;
 
 #if flixel
 import flixel.graphics.frames.FlxBitmapFont;
-import angelCode.shaders.RGBPalette;
 
 /**
  * Simple way to use angel code fonts i guess...
@@ -56,17 +55,6 @@ class AngelFontText extends flixel.text.FlxBitmapText {
 		 */
 		return this.size = size;
 	}
-
-	/**
-	 * RGB Shader Reference
-	 */
-	public var rgbShaderReference:RGBShaderReference;
-
-	/**
-	 * RGB Palette
-	 */
-	private var rgbPalette:RGBPalette;
-
 	/**
 	 * Bitmap Font Code.
 	 */
@@ -124,30 +112,9 @@ class AngelFontText extends flixel.text.FlxBitmapText {
 		 */
 		this.autoSize = false;
 
-		/**
-		 * Create a new instance of `rgbShaderReference`.
-		 */
-		rgbShaderReference = new RGBShaderReference(this, rgbPalette = new RGBPalette());
+		create();
 	}
 
-	/**
-	 * Call `destory`
-	 */
-	public override function destroy() {
-		/**
-		 * Set the `rgbPalette` to null.
-		 */
-		rgbPalette = null;
-
-		/**
-		 * Set the `rgbShaderReference` to null.
-		 */
-		rgbShaderReference = null;
-
-		/**
-		 * Call `super.destory()`
-		 */
-		super.destroy();
-	}
+	public function create() {}
 }
 #end
