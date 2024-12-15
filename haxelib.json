@@ -3,7 +3,7 @@
   "url": "https://github.com/Hackx2/hx_angeltext",
   "license": "MIT",
   "tags": ["angelcode", "haxe", "angeltext"],
-  "description": "uhh idk it just works! 😥",
+  "description": "Effortlessly use Angelcode XML files to create text in HaxeFlixel! ✨",
   "version": "1.0.0",
   "releasenote": "initial upload ⬆️",
   "dependencies": {
