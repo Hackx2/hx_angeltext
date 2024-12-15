@@ -1,6 +1,7 @@
 package angelCode.addons;
 
 #if flixel
+@:deprecated("Isn't finished/i haven't even started lol!")
 class TypedAngelText extends angelCode.AngelFontText {
 	var isTyping:Bool = false;
 

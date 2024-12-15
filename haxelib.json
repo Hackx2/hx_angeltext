@@ -5,6 +5,9 @@
   "tags": ["angelcode", "haxe", "angeltext"],
   "description": "uhh idk it just works! 😥",
   "version": "1.0.0",
-  "releasenote": "Init",
-  "contributors": ["YourFriendOrbl"]
+  "releasenote": "initial upload ⬆️",
+  "dependencies": {
+    "flixel": ""
+  },
+  "contributors": ["hackx2"]
 }
