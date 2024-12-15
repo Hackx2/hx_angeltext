@@ -1,5 +1,5 @@
 [///]: <> (Title)
-<h1><code>hx_angeltext/</code></h1>
+<h1>hx_angeltext/</h1>
 <h3>Effortlessly use Angelcode XML files to create text in HaxeFlixel! ✨</h3>
 
 [///]: <> (Info abt it)
