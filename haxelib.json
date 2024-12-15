@@ -6,8 +6,5 @@
   "description": "Effortlessly use Angelcode XML files to create text in HaxeFlixel! ✨",
   "version": "1.0.0",
   "releasenote": "initial upload ⬆️",
-  "dependencies": {
-    "flixel": ""
-  },
   "contributors": ["hackx2"]
 }
