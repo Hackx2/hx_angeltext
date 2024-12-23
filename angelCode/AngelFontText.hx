@@ -4,11 +4,21 @@ package angelCode;
 import flixel.graphics.frames.FlxBitmapFont;
 
 /**
+ * ===============================
  * Simple way to use angel code fonts i guess...
- * Allows spritesheets to be used instead of fonts.
+ * Allows SpriteSheets to be used instead of fonts.
  * This class is much better than FlxText. i think...
- *
- * @author YourFriendOrbl
+ * Think of this as a overlay for `flixel.text.FlxBitmapText`.
+ * ===============================
+ * Notes:
+ *	 Currently supports only XML spritesheets.
+ * ===============================
+ * References:
+ *	https://api.haxeflixel.com/flixel/text/FlxBitmapText.html/
+ * ===============================
+ * Metadata:
+ *  @author YourFriendOrbl https://yourfriendorbl.carrd.co/
+ * ===============================
  */
 class AngelFontText extends flixel.text.FlxBitmapText {
 	/**
@@ -55,6 +65,7 @@ class AngelFontText extends flixel.text.FlxBitmapText {
 		 */
 		return this.size = size;
 	}
+
 	/**
 	 * Bitmap Font Code.
 	 */
@@ -81,6 +92,11 @@ class AngelFontText extends flixel.text.FlxBitmapText {
 		this.font = _angelCode = FlxBitmapFont.fromAngelCode('$input_path.png', '$input_path.xml');
 
 		/**
+		 * Set `autoSize` to false.
+		 */
+		this.autoSize = false;
+
+		/**
 		 * Set `text` to `input_text`.
 		 */
 		this.text = input_text;
@@ -94,8 +110,8 @@ class AngelFontText extends flixel.text.FlxBitmapText {
 		 * Checks if `input_fieldWidth` doesn't equal 0.
 		 * Set `fieldWidth` to `input_fieldWidth`.
 		 */
-		if (input_fieldWidth != null)
-			this.fieldWidth = input_fieldWidth;
+		if (input_fieldWidth != null && input_fieldWidth is Int)
+			this.fieldWidth = input_fieldWidth * 2;
 
 		/**
 		 * Set `x` to `input_x`.
@@ -106,15 +122,6 @@ class AngelFontText extends flixel.text.FlxBitmapText {
 		 * Set `y` to `input_y`.
 		 */
 		this.y = input_y;
-
-		/**
-		 * Set `autoSize` to false.
-		 */
-		this.autoSize = false;
-
-		create();
 	}
-
-	public function create() {}
 }
 #end

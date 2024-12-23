@@ -4,7 +4,7 @@
   "license": "MIT",
   "tags": ["angelcode", "haxe", "angeltext"],
   "description": "Effortlessly use Angelcode XML files to create text in HaxeFlixel! ✨",
-  "version": "1.0.0",
-  "releasenote": "initial upload ⬆️",
+  "version": "1.0.1",
+  "releasenote": "Bug fixes. kinda... 😔",
   "contributors": ["hackx2"]
 }
