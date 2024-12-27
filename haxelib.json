@@ -2,9 +2,16 @@
   "name": "hx_angeltext",
   "url": "https://github.com/Hackx2/hx_angeltext",
   "license": "MIT",
-  "tags": ["angelcode", "haxe", "angeltext"],
+  "tags": [
+    "angelcode",
+    "haxe",
+    "angeltext"
+  ],
   "description": "Effortlessly use Angelcode XML files to create text in HaxeFlixel! ✨",
   "version": "1.0.1",
   "releasenote": "Bug fixes. kinda... 😔",
-  "contributors": ["hackx2"]
+  "contributors": [
+    "hackx2"
+  ],
+  "dependencies": {}
 }
